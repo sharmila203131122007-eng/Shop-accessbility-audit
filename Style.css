@@ -1,0 +1,11 @@
+<button
+  onClick={addToCart}
+  onKeyDown={(e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      addToCart();
+    }
+  }}
+>
+  Add to Cart
+</button>
